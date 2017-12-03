@@ -87,6 +87,90 @@ body {
   background-color: #A62C21;
 }
 
+/* === NAVIGATIONSLEISTE (MOBILE) === */
+
+.mobile-nav-container {
+  display: none;
+}
+
+.mobile-nav-icon {
+  display: block;
+  padding: .2rem .8rem .4rem .8rem;
+  color: #FFF;
+  border: 2px solid #FFF;
+  margin-top: .4rem;
+  margin-left: 3rem;
+}
+
+.mobile-nav-content {
+  display: none;
+}
+
+.mobile-nav-dropdown {
+  float: right;
+  position: relative;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
+}
+
+.mobile-nav-content > ul {
+  list-style: none;
+  padding: 0;
+  margin-top: .4rem;
+  position: absolute;
+  top: 37px;
+  right: 0;
+}
+
+.mobile-nav-content > ul > .mobile-active {
+  background-color: #A62C21;
+  color: #FFF;
+}
+
+.mobile-nav-content > ul > li {
+  background-color: #3D3F45;
+  height: 50px;
+  padding: .8rem 1.2rem;
+}
+
+.mobile-nav-content > ul > li > a:visited {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-nav-content > ul > li > a:active {
+  color: #E5E5E5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-nav-content > ul > li > a:link {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-nav-content > ul > li > a:hover {
+  color: #E5E5E5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+
+  .nav-container {
+    display: none;
+  }
+
+  .mobile-nav-container {
+    display: block;
+  }
+
+}
+
 /* === HEADER-BANNER === */
 
 .header-banner {
