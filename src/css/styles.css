@@ -23,56 +23,64 @@ body {
   width: 100%;
   height: 50px;
   background-color: #3D3F45;
-  position: relative;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.header-nav > a > img {
-  height: 30px;
-  width: auto;
-  position: absolute;
-  left: 2rem;
-  top: .55rem;
-}
-
-.header-nav > ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 2rem;
+.header-nav > .container,
+.header-nav > .container > .row,
+.header-nav > .container > .row > .col-6 {
   height: 100%;
 }
 
-.header-nav > ul > li {
+.header-nav-logo {
+  height: 30px;
+  width: auto;
+  float: left;
+  margin-top: .5rem;
+}
+
+.header-nav-list {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  float: right;
+}
+
+.header-nav-list > li {
   display: inline-block;
   height: 100%;
   padding: 0 .4rem 0 .4rem;
 }
 
-.header-nav > ul > li > a {
+.header-nav-list > li > a {
   margin-top: .8rem;
   display: inline-block;
 }
 
-.header-nav > ul > li > a:link {
+.header-nav-list > li > a:link {
   color: #FFF;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:hover {
+.header-nav-list > li > a:hover {
   color: #E5E5E5;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:active {
+.header-nav-list > li > a:active {
   color: #E5E5E5;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:visited {
+.header-nav-list > li > a:visited {
   color: #FFF;
   text-decoration: none;
+}
+
+.header-nav .col-6 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .active {
@@ -97,14 +105,56 @@ body {
   background-size: contain;
 }
 
-/*
-1920px x 400px
+/* === GRID-System === */
 
-1000px x ????? (208.3px)
+.container {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-Wie viel % von 1920px sind 400px?
+.row:after {
+  content:"";
+  display: table;
+  clear:both;
+}
 
-400 / 1920 * 100 = 20.83%
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 12px;
+}
 
-300 / 1920 * 100 =
-*/
+.col-1{ width: 16.666%; }
+.col-2{ width: 33.333%; }
+.col-3{ width: 50%;     }
+.col-4{ width: 66.666%; }
+.col-5{ width: 83.333%; }
+.col-6{ width: 100%;    }
+
+@media all and (max-width: 922px) {
+
+  .col-1{ width: 33.333%; }
+  .col-2{ width: 33.333%; }
+  .col-3{ width: 100%;    }
+  .col-6{ width: 100%;    }
+
+}
+
+@media all and (max-width: 768px) {
+
+  .col-1{ width: 50%;   }
+  .col-2{ width: 100%;  }
+  .col-3{ width: 100%;  }
+  .col-6{ width: 100%;  }
+
+}
+
+@media all and (max-width: 576px) {
+
+   .col-1{ width: 100%; }
+   .col-2{ width: 100%; }
+   .col-3{ width: 100%; }
+   .col-6{ width: 100%; }
+
+}
