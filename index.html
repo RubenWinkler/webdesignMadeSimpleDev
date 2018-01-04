@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Startseite</title>
 		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
@@ -68,6 +69,45 @@
 		<!-- HEADER-BANNER -->
 
 		<header class="header-banner"></header>
+
+		<!-- NEWSLETTER-BEREICH -->
+
+		<section class="newsletter-bereich nb-desktop">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-4 heller-text haupttext">
+						<div class="platzhalter-oben"><span class="wichtiger-text">Melde dich jetzt für den Newsletter an und verpasse nichts mehr!</span> Wir schicken dir nur interessante Informationen.</div>
+					</div>
+					<div class="col-2">
+						<form action="index.html" method="get">
+							<label class="versteckt" for="nb-email-desktop">E-Mail:</label>
+							<input id="nb-email-desktop" class="nb-email-input" type="email" name="email" placeholder="Deine E-Mail Adresse">
+							<button class="btn-typ-1 nb-btn" type="submit">Jetzt anmelden!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- NEWSLETTER-BEREICH (MOBILE)-->
+
+		<section class="newsletter-bereich nb-mobile">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<form action="index.html" method="get">
+							<label class="versteckt" for="nb-email-mobile">E-Mail:</label>
+							<input id="nb-email-mobile" class="nb-email-input" type="email" name="email" placeholder="Deine E-Mail Adresse">
+							<button class="btn-typ-1 nb-btn" type="submit">Für den Newsletter anmelden!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</section>
 
 	</body>
 

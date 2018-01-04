@@ -7,6 +7,8 @@ Hell Grau:    #E5E5E5
 Rot:          #A62C21
 */
 
+/* === GLOBAL === */
+
 body {
   margin: 0;
   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
@@ -15,6 +17,37 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* === GENERELLES === */
+
+.versteckt {
+  display: none;
+}
+
+.wichtiger-text {
+  font-weight: bold;
+}
+
+.heller-text {
+  color: #FFF;
+}
+
+.haupttext {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.platzhalter-oben {
+  margin-top: .25rem;
+}
+
+.btn-typ-1 {
+  height: 2rem;
+  background-color: #A62C21;
+  border: 3px solid #A62C21;
+  color: #FFF;
+  font-size: 1rem;
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -189,6 +222,71 @@ body {
   background-size: contain;
 }
 
+/* === NEWSLETTER-BEREICH === */
+
+.newsletter-bereich {
+  width: 100%;
+  background-color: #3D3F45;
+}
+
+.newsletter-formular {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nb-mobile {
+  display: none;
+}
+
+.nb-email-input {
+  width: 60%;
+  height: 2rem;
+  padding: .4rem .4rem;
+  margin-right: 1rem;
+  background-color: #FFF;
+  border: 3px solid #FFF;
+  color: #FFF;
+}
+
+.nb-btn {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1268px) {
+
+  .nb-email-input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .nb-btn {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .nb-desktop {
+    display: none;
+  }
+
+  .nb-mobile {
+    display: block;
+  }
+
+  .nb-email-input {
+    height: 1.6rem;
+    border: 3px solid #FFF;
+  }
+
+  .nb-btn {
+    height: 1.6rem;
+    font-size: .9rem;
+  }
+
+}
+
 /* === GRID-System === */
 
 .container {
@@ -216,7 +314,7 @@ body {
 .col-5{ width: 83.333%; }
 .col-6{ width: 100%;    }
 
-@media all and (max-width: 922px) {
+@media all and (max-width: 1024px) {
 
   .col-1{ width: 33.333%; }
   .col-2{ width: 33.333%; }
@@ -234,7 +332,7 @@ body {
 
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 320px) {
 
    .col-1{ width: 100%; }
    .col-2{ width: 100%; }
