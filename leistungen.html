@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Leistungen</title>
 		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
@@ -12,17 +13,17 @@
 
 		<!-- NAVIGATIONSLEISTE -->
 
-		<nav class="header-nav">
+		<nav id="header-nav">
 
-			<div class="container nav-container">
+			<div class="container" id="desktop-nav">
 				<div class="row">
 					<div class="col-6">
 
 						<a href="index.html">
-							<img class="header-nav-logo" src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
+							<img src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
 						</a>
 
-						<ul class="header-nav-list">
+						<ul>
 							<li><a href="index.html">Startseite</a></li>
 							<li class="active"><a href="leistungen.html">Leistungen</a></li>
 							<li><a href="kontakt.html">Kontakt</a></li>
@@ -33,30 +34,29 @@
 				</div>
 			</div>
 
-			<!-- NAVIGATIONSLEISTE (MOBILE) -->
-
-			<div class="container mobile-nav-container">
+			<div class="container" id="mobile-nav">
 				<div class="row">
 					<div class="col-6">
 
 						<a href="index.html">
-							<img class="header-nav-logo" src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
+							<img src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
 						</a>
 
-						<div class="mobile-nav-dropdown">
+						<div class="clearfix" id="mobile-nav-dropdown">
 
-							<span class="mobile-nav-icon">&equiv;</span>
+							<div id="mobile-nav-button"><span>&equiv;</span></div>
 
-						  <div class="mobile-nav-content">
+							<div class="clearfix" id="mobile-nav-content">
 
 								<ul>
 									<li><a href="index.html">Startseite</a></li>
-									<li class="mobile-active"><a href="leistungen.html">Leistungen</a></li>
+									<li class="active"><a href="leistungen.html">Leistungen</a></li>
 									<li><a href="kontakt.html">Kontakt</a></li>
 									<li><a href="impressum.html">Impressum</a></li>
 								</ul>
 
-						  </div>
+							</div>
+
 						</div>
 
 					</div>
@@ -67,7 +67,7 @@
 
 		<!-- HEADER-BANNER -->
 
-		<header class="header-banner-klein"></header>
+		<header id="header-banner-klein"></header>
 
 	</body>
 

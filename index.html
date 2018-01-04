@@ -13,17 +13,17 @@
 
 		<!-- NAVIGATIONSLEISTE -->
 
-		<nav class="header-nav">
+		<nav id="header-nav">
 
-			<div class="container nav-container">
+			<div class="container" id="desktop-nav">
 				<div class="row">
 					<div class="col-6">
 
 						<a href="index.html">
-							<img class="header-nav-logo" src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
+							<img src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
 						</a>
 
-						<ul class="header-nav-list">
+						<ul>
 							<li class="active"><a href="index.html">Startseite</a></li>
 							<li><a href="leistungen.html">Leistungen</a></li>
 							<li><a href="kontakt.html">Kontakt</a></li>
@@ -34,30 +34,29 @@
 				</div>
 			</div>
 
-			<!-- NAVIGATIONSLEISTE (MOBILE) -->
-
-			<div class="container mobile-nav-container">
+			<div class="container" id="mobile-nav">
 				<div class="row">
 					<div class="col-6">
 
 						<a href="index.html">
-							<img class="header-nav-logo" src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
+							<img src="src/img/webdesign-logo.png" alt="Das Logo von WEBDESIGN made simple">
 						</a>
 
-						<div class="mobile-nav-dropdown">
+						<div class="clearfix" id="mobile-nav-dropdown">
 
-							<span class="mobile-nav-icon">&equiv;</span>
+							<div id="mobile-nav-button"><span>&equiv;</span></div>
 
-						  <div class="mobile-nav-content">
+							<div class="clearfix" id="mobile-nav-content">
 
 								<ul>
-									<li class="mobile-active"><a href="index.html">Startseite</a></li>
+									<li class="active"><a href="index.html">Startseite</a></li>
 									<li><a href="leistungen.html">Leistungen</a></li>
 									<li><a href="kontakt.html">Kontakt</a></li>
 									<li><a href="impressum.html">Impressum</a></li>
 								</ul>
 
-						  </div>
+							</div>
+
 						</div>
 
 					</div>
@@ -68,41 +67,30 @@
 
 		<!-- HEADER-BANNER -->
 
-		<header class="header-banner"></header>
+		<header id="header-banner"></header>
 
 		<!-- NEWSLETTER-BEREICH -->
 
-		<section class="newsletter-bereich nb-desktop">
+		<section id="newsletter-bereich">
 
 			<div class="container">
 				<div class="row">
-					<div class="col-4 heller-text haupttext">
-						<div class="platzhalter-oben"><span class="wichtiger-text">Melde dich jetzt für den Newsletter an und verpasse nichts mehr!</span> Wir schicken dir nur interessante Informationen.</div>
+					<div class="col-4">
+
+						<p id="nb-werbetext"><span class="wichtiger-text">Melde dich jetzt für den Newsletter an und verpasse nichts mehr!</span> Wir schicken dir nur interessante Informationen.</p>
+
 					</div>
-					<div class="col-2">
-						<form action="index.html" method="get">
-							<label class="versteckt" for="nb-email-desktop">E-Mail:</label>
-							<input id="nb-email-desktop" class="nb-email-input" type="email" name="email" placeholder="Deine E-Mail Adresse">
-							<button class="btn-typ-1 nb-btn" type="submit">Jetzt anmelden!</button>
+					<div class="col-2 clearfix">
+
+						<form id="nb-form" action="index.html" method="post">
+
+							<label class="screenreader" for="nb-email-input">E-Mail:</label>
+							<input id="nb-email-input" type="text" name="email" placeholder="Deine E-Mail Adresse" pattern="(?:[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*|'(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*')@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gibt eine gültige E-Mail Adresse ein.">
+
+							<button class="btn-typ-1" id="nb-btn" type="submit">Jetzt anmelden!</button>
+
 						</form>
-					</div>
-				</div>
-			</div>
 
-		</section>
-
-		<!-- NEWSLETTER-BEREICH (MOBILE)-->
-
-		<section class="newsletter-bereich nb-mobile">
-
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<form action="index.html" method="get">
-							<label class="versteckt" for="nb-email-mobile">E-Mail:</label>
-							<input id="nb-email-mobile" class="nb-email-input" type="email" name="email" placeholder="Deine E-Mail Adresse">
-							<button class="btn-typ-1 nb-btn" type="submit">Für den Newsletter anmelden!</button>
-						</form>
 					</div>
 				</div>
 			</div>
