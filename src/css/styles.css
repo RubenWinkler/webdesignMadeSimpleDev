@@ -3,7 +3,7 @@
 /*
 Blau:         #1F4E8C
 Dunkel Grau:  #3D3F45
-Hell Grau:    #E5E5E5
+Hell Grau:    #F0F0F0
 Rot:          #A62C21
 */
 
@@ -17,6 +17,43 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1024px) {
+
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  section {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(184, 184, 184, .5), 0 0 10px #F0F0F0;
 }
 
 /* === GENERELLES === */
@@ -44,6 +81,74 @@ body {
   border: 2px solid #A62C21;
   color: #FFF;
   padding: .4rem .6rem;
+}
+
+.btn-typ-1:hover {
+  background-color: #A62C21;
+  border: 2px solid #F0F0F0;
+  color: #F0F0F0;
+  padding: .4rem .6rem;
+}
+
+.btn-typ-2:link {
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #FFF;
+}
+
+.btn-typ-2:visited {
+  color: #FFF;
+  border: 2px solid #FFF;
+}
+
+.btn-typ-2:active {
+  color: #A62C21;
+  border: 2px solid #A62C21;
+}
+
+.btn-typ-2:hover {
+  color: #A62C21;
+  border: 3px solid #A62C21;
+}
+
+.intro-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+
+  .intro-container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .intro-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+}
+
+.intro-titel {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  font-size: 1.2rem;
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -87,18 +192,18 @@ body {
   text-decoration: none;
 }
 
-#header-nav ul > li > a:hover {
-  color: #E5E5E5;
-  text-decoration: none;
-}
-
 #header-nav ul > li > a:active {
-  color: #E5E5E5;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
 #header-nav ul > li > a:visited {
   color: #FFF;
+  text-decoration: none;
+}
+
+#header-nav ul > li > a:hover {
+  color: #F0F0F0;
   text-decoration: none;
 }
 
@@ -197,6 +302,8 @@ body {
 #newsletter-bereich {
   width: 100%;
   background-color: #3D3F45;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #nb-werbetext {
@@ -230,7 +337,7 @@ body {
 
 }
 
-@media (max-width: 1358px) {
+@media (max-width: 1440px) {
 
   #nb-email-input {
     width: 100%;
@@ -268,6 +375,351 @@ body {
   #nb-btn {
     height: 25px;
     padding: .1rem;
+  }
+
+}
+
+/* === LEISTUNGEN-BEREICH === */
+
+.leistung {
+  width: 60%;
+  text-align: center;
+  padding: 1rem 3rem 2.5rem 3rem;
+  color: white;
+  background-color: #3D3F45;
+  margin-bottom: 2rem;
+}
+
+.row .col-3:nth-of-type(even) .leistung {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.row .col-3:nth-of-type(odd) .leistung {
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.leistung > h3 {
+  font-size: 1.4rem;
+}
+
+.leistung-ansehen-btn {
+  margin-top: 1rem;
+  min-width: 85px;
+  height: 40px;
+  width: 40%;
+  padding: .5rem;
+}
+
+@media (max-width: 1440px) {
+
+  .leistung {
+    width: 80%;
+  }
+
+  .row .col-3:nth-of-type(even) .leistung {
+    margin-left: 0.5rem;
+  }
+
+  .row .col-3:nth-of-type(odd) .leistung {
+    margin-right: 0.5rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .leistung {
+    width: 100%;
+  }
+
+  .row .col-3:nth-of-type(even) .leistung {
+    margin-left: 0.5rem;
+  }
+
+  .row .col-3:nth-of-type(odd) .leistung {
+    margin-right: 0.5rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .row .col-3:nth-of-type(even) .leistung {
+    margin-left: 0;
+  }
+
+  .row .col-3:nth-of-type(odd) .leistung {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .leistung {
+    padding: 1rem 2.5rem 2rem 2.5rem;
+    color: white;
+    background-color: #3D3F45;
+    margin-bottom: 1rem;
+  }
+
+}
+
+/* === VIDEO-BEREICH ===  */
+
+#video-bereich {
+  background-color: #3D3F45;
+  color: #FFF;
+}
+
+#video-bereich video {
+  width: 35%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media (max-width: 1440px) {
+
+  #video-bereich video {
+    width: 45%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  #video-bereich video {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #video-bereich video {
+    width: 75%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #video-bereich video {
+    width: 90%;
+  }
+
+}
+
+/* === SERVICE-BEREICH ===  */
+
+#service-bereich {
+  background-color: #F0F0F0;
+}
+
+#services-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-box {
+  text-align: center;
+  padding: 1.5rem 3rem 2.5rem;
+}
+
+.service-box h3 {
+  font-size: 1.4rem;
+}
+
+.service-icon {
+  height: 120px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.guenstig {
+  background: #3D3F45 url("C:/Users/rwink/Desktop/webdesignMadeSimpleDev/src/img/services-sprite.png") 0 0;
+}
+
+.schnell {
+  background: #3D3F45 url("C:/Users/rwink/Desktop/webdesignMadeSimpleDev/src/img/services-sprite.png") -120px 0;
+}
+
+.mobil {
+  background: #3D3F45 url("C:/Users/rwink/Desktop/webdesignMadeSimpleDev/src/img/services-sprite.png") -240px 0;
+}
+
+@media (max-width: 1290px) {
+
+  .service-box {
+    text-align: center;
+    padding: .5rem;
+  }
+
+}
+
+/*
+
+Vorlage
+
+.service-icon {
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.guenstig {
+  background: #3D3F45 url("./../img/services-sprite.png") 0 0;
+}
+
+.schnell {
+  background: #3D3F45 url("./../img/services-sprite.png") -120px 0;
+}
+
+.modern {
+  background: #3D3F45 url("./../img/services-sprite.png") -240px 0;
+}
+
+@media (max-width: 768px) {
+
+  #service-bereich > .container > .row:nth-of-type(2) > .col-2 > .service-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .service-box {
+    width: 100%;
+  }
+
+}
+
+
+
+*/
+
+/* === ÜBER-UNS-BEREICH ===  */
+
+#über-uns-bereich {
+  background-color: #FFF;
+}
+
+#über-uns-container {
+  position: relative;
+}
+
+#über-uns-container img {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 100%;
+}
+
+.über-uns-text {
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1750px) {
+
+  #über-uns-container img {
+    right: 50px;
+  }
+
+}
+
+@media (max-width: 1602px) {
+
+  #über-uns-container img {
+    right: 0;
+  }
+
+}
+
+@media (max-width: 1490px) {
+
+  .über-uns-text {
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .über-uns-text {
+    width: 60%;
+  }
+
+  #über-uns-container img {
+    max-height: 920px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .über-uns-text {
+    width: 100%;
+  }
+
+  #über-uns-container img {
+    display: none;
+  }
+
+}
+
+/* === FOOTER ===  */
+
+#footer {
+  background-color: #3D3F45;
+  height: 2.8rem;
+}
+
+#footer span {
+  color: #FFF;
+}
+
+#footer-nav {
+  display: inline;
+}
+
+#footer-nav a {
+  float: right;
+  text-decoration: none;
+}
+
+#footer-nav a:link {
+  color: #FFF;
+}
+
+#footer-nav a:visited {
+  color: #FFF;
+}
+
+#footer-nav a:active {
+  color: #FFF;
+}
+
+#footer-nav a:hover {
+  color: #F0F0F0;
+}
+
+@media (max-width: 565px) {
+
+  #footer span {
+    display: none;
   }
 
 }
